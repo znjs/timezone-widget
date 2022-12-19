@@ -154,10 +154,10 @@ function App() {
               {time && (
                 <>
                   <h1>
-                    {time.date} {getMonth(time.month)} {time.year}
+                    Date: {time.date} {getMonth(time.month)} {time.year}
                   </h1>
                   <h1>
-                    {time.hours}:{time.minutes}
+                    Time: {time.hours}:{time.minutes}
                   </h1>
                 </>
               )}
