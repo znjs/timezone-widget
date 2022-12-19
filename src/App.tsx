@@ -3,6 +3,7 @@ import { AiFillClockCircle } from "react-icons/ai";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { nanoid } from "nanoid";
+import { Footer } from "./components/Footer";
 import { decryptTimestamp, getTimeStamp } from "./utils";
 
 const TIMEZONES = [
@@ -99,8 +100,8 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-200 p-4 text-center sm:text-left h-screen">
-      <nav className="flex flex-wrap items-center justify-between max-w-[875px] mx-auto">
+    <div className="bg-slate-200 flex  p-4 text-center sm:text-left h-screen flex-col">
+      <nav className="flex flex-wrap items-center justify-between w-full max-w-[875px] mx-auto">
         <h1 className="text-2xl sm:text-3xl  mb-4 flex items-center">
           <AiFillClockCircle />
           &nbsp; Time-Timezone Calculator
@@ -124,7 +125,7 @@ function App() {
           </select>
         </div>
       </nav>
-      <div className="flex flex-wrap items-center justify-between max-w-[875px] mx-auto mt-16">
+      <div className="flex w-full flex-wrap items-center justify-between max-w-[875px] mx-auto mt-16">
         <div>
           <p className="font-semibold text-lg ">Timestamp to Time convertor</p>
           <div>
@@ -204,6 +205,8 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="grow"></div>
+      <Footer />
       <ToastContainer />
     </div>
   );
