@@ -200,7 +200,7 @@ function App() {
               }}>
               Compute timestamp
             </button>
-            {Boolean(computedTimestamp) && <p>{computedTimestamp}</p>}
+            {Boolean(computedTimestamp) && <p>Timestamp: {computedTimestamp}</p>}
           </div>
         </div>
       </div>
